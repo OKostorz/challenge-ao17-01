@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <title>Espressobar</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Shadows+Into+Light" rel="stylesheet">
+    <meta charset="utf-8">
+</head>
+    
+<body>
+    <header>
+        
+        <!-- LOGO -->
+        <div id="logo">
+            <img src="jpg/logo1.jpg" class="logo" alt="logo">
+        </div>
+        
+        <!-- BUTTON / MENU-->
+        <nav id="menu">
+            <ul><li><a href="index.html">Home</a></li>
+                <li class="active"><a href="over.html">Over</a></li>
+                <li><a href="jobs.html">Jobs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- SLIDESHOW -->
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="jpg/home-banner.jpg" alt="banner" class="banner">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="jpg/jobs-banner2.jpg" alt="banner" class="banner">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="jpg/jobs-banner.jpg" alt="banner" class="banner">
+        </div>
+    
+        <div class="mySlides fade">
+          <img src="jpg/jobs-banner3.jpg" alt="banner" class="banner">
+        </div> 
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+    </div>
+    
+    <main>
+        <article id="transparent">
+        
+            <div id="tekst"> 
+                <h1>WERKEN BIJ ESPRESSOBAR CHAVEZ</h1>
+                    <p>Espressobar Chavez is als een tweede huiskamer. Ons horeca-concept draait om koffie, health, genieten en gezelligheid. Floreer jij in zo’n ongedwongen sfeer en bezorg jij anderen graag een fijn moment in zijn of haar dag? Is koffie jouw middle name? Dan zou je zomaar in ons team kunnen passen. Scroll verder voor de vacatures of stuur ons een open sollicitatie.</p>
+                
+                <h2>WIL JE WERKEN BIJ ESPRESSOBAR CHAVEZ? DAN IS DIT WAT WE VAN JE VERWACHTEN:</h2>
+                    
+                    <ul><li>Jij wilt gasten een fijn moment in hun dag bezorgen. Iedere klant, iedere dag weer.</li>
+                    <li>Flexibele werktijden zijn voor jou geen probleem.</li>
+                    <li>Je pakt zaken met passie aan.</li>	
+                    <li>Je snapt ons concept en draagt het graag uit.</li>	
+                    <li>Niet alleen de gasten, maar ook je collega’s kunnen rekenen op jouw glimlach.</li></ul>
+                
+                 <img src="jpg/jobs-photo2.png" class="top-right" alt="jobs">
+                
+            </div>
+        </article>
+    </main>
+    
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,196 @@
+body {
+    margin: 0 auto;
+    background-image: url(jpg/coffe-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+article {
+    margin: 0 auto ; 
+    padding: 0 15px;
+}
+
+article h1 {
+    padding-top: 15px;
+    
+    font-size: 36px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;   
+}
+
+article h2 {
+    font-size: 26px;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: left;
+}
+
+article p {
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+    
+    line-height: 1.4;
+}
+
+article ul {
+    font-size: 20px;
+    font-family: 'Catamaran', sans-serif;
+    
+    line-height: 1.4;
+}
+
+#tekst ul{
+    list-style: none;
+    padding-top: 15px;
+}
+
+.logo {
+    width: 10%;
+    position: relative;
+    
+    top: 30px;
+    left: 30px;   
+}
+
+.center {
+    margin-top: 50px;
+    padding: 0 10px 0 30px;
+    float: right;
+}
+
+.top-right {
+    float: right;
+    position: relative;
+    
+    top: -290px;
+    left: 180px;
+    
+    width: 50%;
+}
+
+.top-left {
+    float: right;
+    position: relative;
+    width: 50%;
+    
+    top: -70px;
+    left: 20px;
+}
+
+.bottom-right {
+    width: 45%;
+    position: relative;
+    
+    top: -410px;
+    left: 520px;
+}
+
+#transparent {
+    width: 74%;
+
+    padding-bottom: 15px;
+    background-color: rgba(244, 244, 244, 0.6);
+}
+
+nav#menu {
+    margin: 0 auto;
+    margin-left: 160px;
+    top: -80px;
+    
+    width: 700px;
+    height: 35px;
+    
+    position: relative;
+    
+    display: inline-block;
+}
+
+nav ul {
+    padding-left: 1px;
+}
+
+nav ul a {
+    text-decoration: none;
+    
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 30px;
+    color: black;
+}
+
+nav ul a:hover {
+    border-bottom: 2px solid grey;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 30px;
+}
+
+footer {
+    position: absolute;
+    right: 0;
+    top: 1600px;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
+
+
+
+/*JAVASCRIPT*/
+
+
+* {
+    box-sizing: border-box;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin: auto;
+}
+
+img.banner {
+    width: 100%;
+
+    
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
